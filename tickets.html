@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tickets - Tech Summit 2026</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo"><a href="index.html" style="color: white; text-decoration: none;">TechSummit 2026</a></div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="speakers.html" class="nav-link">Speakers</a></li>
+                    <li><a href="schedule.html" class="nav-link">Schedule</a></li>
+                    <li><a href="tickets.html" class="nav-link">Tickets</a></li>
+                    <li><a href="sponsors.html" class="nav-link">Sponsors</a></li>
+                    <li><a href="venue.html" class="nav-link">Venue</a></li>
+                    <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Ticket Options</h1>
+            <p>Choose the ticket that works best for you</p>
+        </div>
+    </section>
+
+    <!-- Tickets Section -->
+    <section class="tickets-section">
+        <div class="container">
+            <div class="tickets-grid">
+                <!-- Standard Ticket -->
+                <div class="ticket-card">
+                    <div class="ticket-badge">STANDARD</div>
+                    <h3 class="ticket-price">₹5,999</h3>
+                    <p class="ticket-duration">3-Day Pass</p>
+                    <p class="ticket-description">Perfect for first-time attendees</p>
+
+                    <div class="ticket-features">
+                        <h4>What's Included:</h4>
+                        <ul>
+                            <li>✓ Access to all keynote sessions</li>
+                            <li>✓ General breakout sessions</li>
+                            <li>✓ Lunch (all 3 days)</li>
+                            <li>✓ Coffee & refreshments</li>
+                            <li>✓ Networking events</li>
+                            <li>✓ Event materials & resources</li>
+                            <li>✗ Premium workshops</li>
+                            <li>✗ VIP dinner</li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-primary" onclick="selectTicket('standard')">Select Ticket</button>
+                </div>
+
+                <!-- Premium Ticket -->
+                <div class="ticket-card featured">
+                    <div class="ticket-badge featured-badge">POPULAR</div>
+                    <h3 class="ticket-price">₹10,999</h3>
+                    <p class="ticket-duration">3-Day Pass</p>
+                    <p class="ticket-description">Most popular choice</p>
+
+                    <div class="ticket-features">
+                        <h4>What's Included:</h4>
+                        <ul>
+                            <li>✓ All Standard benefits</li>
+                            <li>✓ Premium workshop access</li>
+                            <li>✓ Speaker meet & greet</li>
+                            <li>✓ Premium seating</li>
+                            <li>✓ Exclusive networking dinner</li>
+                            <li>✓ Digital recordings</li>
+                            <li>✓ Premium materials package</li>
+                            <li>✗ VIP lounge access</li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-primary" onclick="selectTicket('premium')">Select Ticket</button>
+                </div>
+
+                <!-- VIP Ticket -->
+                <div class="ticket-card">
+                    <div class="ticket-badge">VIP</div>
+                    <h3 class="ticket-price">₹19,999</h3>
+                    <p class="ticket-duration">3-Day Pass</p>
+                    <p class="ticket-description">Ultimate experience</p>
+
+                    <div class="ticket-features">
+                        <h4>What's Included:</h4>
+                        <ul>
+                            <li>✓ All Premium benefits</li>
+                            <li>✓ VIP lounge access</li>
+                            <li>✓ Private speaker sessions</li>
+                            <li>✓ 1-on-1 mentoring</li>
+                            <li>✓ VIP dinner & entertainment</li>
+                            <li>✓ Exclusive merchandise</li>
+                            <li>✓ Lifetime access to materials</li>
+                            <li>✓ Front-row seating</li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-primary" onclick="selectTicket('vip')">Select Ticket</button>
+                </div>
+
+                <!-- Student Ticket -->
+                <div class="ticket-card">
+                    <div class="ticket-badge">SPECIAL</div>
+                    <h3 class="ticket-price">₹2,999</h3>
+                    <p class="ticket-duration">3-Day Pass</p>
+                    <p class="ticket-description">Students & educators</p>
+
+                    <div class="ticket-features">
+                        <h4>What's Included:</h4>
+                        <ul>
+                            <li>✓ Access to all keynote sessions</li>
+                            <li>✓ General breakout sessions</li>
+                            <li>✓ Lunch (all 3 days)</li>
+                            <li>✓ Coffee & refreshments</li>
+                            <li>✓ Student networking events</li>
+                            <li>✓ Career fair access</li>
+                            <li>✗ Premium workshops</li>
+                            <li>✗ VIP events</li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-primary" onclick="selectTicket('student')">Select Ticket</button>
+                </div>
+
+                <!-- Corporate Ticket -->
+                <div class="ticket-card">
+                    <div class="ticket-badge">SPECIAL</div>
+                    <h3 class="ticket-price">Contact Us</h3>
+                    <p class="ticket-duration">Team Pass (10+)</p>
+                    <p class="ticket-description">For companies & teams</p>
+
+                    <div class="ticket-features">
+                        <h4>What's Included:</h4>
+                        <ul>
+                            <li>✓ Bulk discount pricing</li>
+                            <li>✓ Customized pass allocation</li>
+                            <li>✓ Corporate branding opportunity</li>
+                            <li>✓ Team lead designated seating</li>
+                            <li>✓ Custom package available</li>
+                            <li>✓ Sponsorship options</li>
+                            <li>✓ Dedicated support team</li>
+                            <li>✓ Flexible payment terms</li>
+                        </ul>
+                    </div>
+                    <a href="contact.html" class="btn btn-primary">Contact Us</a>
+                </div>
+
+                <!-- Workshop Bundle -->
+                <div class="ticket-card">
+                    <div class="ticket-badge">ADD-ON</div>
+                    <h3 class="ticket-price">₹3,999</h3>
+                    <p class="ticket-duration">Add-on Option</p>
+                    <p class="ticket-description">Premium workshops only</p>
+
+                    <div class="ticket-features">
+                        <h4>What's Included:</h4>
+                        <ul>
+                            <li>✓ 5 premium workshops</li>
+                            <li>✓ Hands-on training materials</li>
+                            <li>✓ Instructor support</li>
+                            <li>✓ Certificate of completion</li>
+                            <li>✓ Recordings & resources</li>
+                            <li>✗ Main conference sessions</li>
+                            <li>✗ Meals included</li>
+                            <li>✗ General events</li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-primary" onclick="selectTicket('workshop')">Select Add-on</button>
+                </div>
+            </div>
+
+            <!-- Early Bird Notice -->
+            <div class="early-bird-notice">
+                <p><strong>Early Bird Special:</strong> Get 20% off all tickets until June 30, 2026!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="tickets-faq">
+        <div class="container">
+            <h2>Ticket FAQs</h2>
+            <div class="faq-items">
+                <div class="faq-item">
+                    <h4>Can I change my ticket type after purchase?</h4>
+                    <p>Yes, you can upgrade your ticket up to 7 days before the event. Contact support for downgrade requests.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Is there a refund policy?</h4>
+                    <p>Full refunds are available until July 1, 2026. After that date, no refunds but transfers to another person are allowed.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Do tickets include accommodation?</h4>
+                    <p>No, but we have partnered hotels with special discounts. See our venue page for details.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Can I buy tickets at the door?</h4>
+                    <p>Yes, if available. However, online pre-registration is recommended and guarantees your seat.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Don't Miss Out!</h2>
+            <p>Early bird pricing ends June 30, 2026 - Secure your spot today</p>
+            <a href="index.html" class="btn btn-primary">Register Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About</h4>
+                    <p>Tech Summit 2026 - Where innovation meets opportunity</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="speakers.html">Speakers</a></li>
+                        <li><a href="schedule.html">Schedule</a></li>
+                        <li><a href="tickets.html">Tickets</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: info@techsummitindia.com</p>
+                    <p>Phone: +91 (98765) 43210</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Tech Summit. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function selectTicket(type) {
+            alert(`You selected the ${type} ticket! Proceeding to checkout...`);
+            // In a real application, this would redirect to a payment page
+        }
+    </script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
