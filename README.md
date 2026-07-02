@@ -1,5 +1,25 @@
 # Event Webpage - Complete Event Website
 
+## Live Preview
+
+- Local Live Server Preview: [https://kushalkumar-shaw.github.io/Event-Webpage/](https://kushalkumar-shaw.github.io/Event-Webpage/)
+
+## Screenshots
+
+### Main Preview
+
+![Main Preview](sc/main.png)
+
+### Additional Screenshots
+
+![Screenshot 1](sc/1.png)
+![Screenshot 2](sc/2.png)
+![Screenshot 3](sc/3.png)
+![Screenshot 4](sc/4.png)
+![Screenshot 5](sc/5.png)
+![Screenshot 6](sc/6.png)
+![Screenshot 7](sc/7.png)
+
 ## 📁 Project Structure
 
 ```

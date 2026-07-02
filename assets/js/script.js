@@ -14,19 +14,25 @@ const navLinks = document.querySelectorAll('.nav-link');
 
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
-        hamburger.classList.remove('active');
-        navMenu.classList.remove('active');
+        if (hamburger && navMenu) {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+        }
     });
 });
 
 // Smooth scrolling for navigation links
 navLinks.forEach(link => {
     link.addEventListener('click', (e) => {
-        e.preventDefault();
         const targetId = link.getAttribute('href');
+        if (!targetId || !targetId.startsWith('#')) {
+            return;
+        }
+
         const targetSection = document.querySelector(targetId);
 
         if (targetSection) {
+            e.preventDefault();
             targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
     });
